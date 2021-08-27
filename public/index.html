@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="design_files/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="design_files/css/style.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"></script>
+
+
+
+        <link href="./css/index.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex justify-content-center p-5">
+        <div class="card" id="log-in">
+            <div class="inner" >
+                <div class="image-holder">
+                    <img src="design_files/images/login.jpg">
+                </div>
+                <form onsubmit="login()" id="loginForm">
+                    <h3>Login</h3>
+                    <div class="form-wrapper">
+                        <input id="email" type="email" placeholder="Email Address" class="form-control">
+                        <i class="zmdi  zmdi-email"></i>
+                    </div>
+                    <div class="form-wrapper">
+                        <input id="password" type="password" placeholder="Password" class="form-control">
+                        <i class="zmdi  zmdi-lock"></i>
+                    </div>
+                    
+                    <div class="form-group container-login100-form-btn">
+                        <button id="btn-login" type="button" onclick="login()">
+                            Login
+                            <i class="zmdi  zmdi-arrow-right"></i>
+                        </button>
+                    </div>
+                    <div class="w-full text-center p-t-27 p-b-239">
+                        <span class="text-muted">
+                            Forgot
+                        </span>
+                        <a href="#" onclick="forgotPass()" class="text-darks" >
+                            user name/password?
+                        </a>
+                    </div>
+                    <button id="btn-signin" type="button" onclick="googleSignIn()">
+                        Sign In with Google 
+                    </button>
+                    <div class="w-full text-center" style="margin-top:66%; font-size:15px;">
+                        <a href="#" onclick="signUpForm()" class="text-darks" >
+                            Not have an account? signup
+                        </a>
+                    </div>
+                </form>
+            </div>
+    </div>
+        <div class="card" id="sign-up">
+            <div class="inner">
+                <div class="image-holder">
+                        <img src="design_files/images/registration-form-1.jpg">
+                </div>
+                <form onsubmit="login()" id="signupForm">
+                    <h3>Register</h3>
+                    <div class="form-wrapper">
+                        <input id="email" type="email" placeholder="Email Address" class="form-control">
+                        <i class="zmdi  zmdi-email"></i>
+                    </div>
+                    <div class="form-wrapper">
+                        <input id="password" type="password" placeholder="Password" class="form-control">
+                        <i class="zmdi  zmdi-lock"></i>
+                    </div>
+                    <div class="form-wrapper">
+                        <input id="confirm-password" type="password" placeholder=" Confirm Password" class="form-control">
+                        <i class="zmdi  zmdi-lock"></i>
+                    </div>
+                    <div class="form-group container-login100-form-btn">
+                        <button id="btn-signup" type="button"onclick="signUp()">
+                            Register
+                            <i class="zmdi  zmdi-arrow-right"></i>
+                        </button>
+                    </div>
+                    <div class="w-full text-center" style="margin-top:66%; font-size:15px;">
+                        <a href="#" onclick="signInForm()" class="text-darks" >
+                            Already have an account?
+                        </a>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-storage.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+
+        <script src="./Scripts/firebase.js"></script>
+        <script src="./Scripts/index.js"></script>
+    </body>
+</html>
